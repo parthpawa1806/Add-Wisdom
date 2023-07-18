@@ -11,7 +11,7 @@ class reccomendedWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 200, // Provide a fixed height for the widget
+      height: 200, 
       child: Obx(
         () => GridView.builder(
           shrinkWrap: true,

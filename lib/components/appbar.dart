@@ -11,18 +11,18 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       leading: IconButton(onPressed: null, icon: Icon(FeatherIcons.menu,color: Colors.white,)),
-      backgroundColor: Colors.black12,
-      elevation: 0,
+      backgroundColor: Colors.black87,
+      elevation: 10,
       actions: [
         Padding(
-          padding: const EdgeInsets.only(top: 10),
+          padding: const EdgeInsets.only(top: 10,bottom: 5),
           child: InkWell(
             onTap: () {
               // Add your onTap logic here
             },
             child: CircleAvatar(
               backgroundImage: AssetImage('lib/assets/images/bgimageee.jpg'),
-              radius: 35,
+              radius: 30,
             ),
           ),
         ),
