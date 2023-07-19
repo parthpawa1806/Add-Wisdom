@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:mediaplayer/Screens/audio_page.dart';
+import 'package:mediaplayer/Screens/books_screen.dart';
+import 'package:mediaplayer/Screens/productdetail_screen.dart';
+import 'package:mediaplayer/Screens/video_page.dart';
+import 'package:mediaplayer/components/app_drawer.dart';
 import 'package:mediaplayer/components/appbar.dart';
 import 'package:mediaplayer/components/bottomnavigationbar.dart';
 import 'package:mediaplayer/components/categories.dart';
@@ -14,10 +21,19 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+   final List<String> drawerItems = [
+    'HomePage',
+    'Product Detail Page', 
+    'VideoPlayer',
+     'AudioPlayer',
+     'PdfViewer' 
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
       appBar: AppBarWidget(),
+              drawer: AppDrawer(),
       backgroundColor: Colors.black12,
       body: SingleChildScrollView(
         child: Column(

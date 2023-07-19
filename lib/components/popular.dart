@@ -57,13 +57,16 @@ class _PopularWidgetState extends State<PopularWidget> {
                           width: width * .67,
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
+                            
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(20),
                               boxShadow: [
                                 BoxShadow(
+                                  
                                     color: Colors.black.withOpacity(.15),
                                     blurRadius: 10)
-                              ])),
+                              ]),
+                              child: Image.asset('lib/assets/images/books.jpg',fit: BoxFit.fitHeight,),),
                     );
                     cards.add(customizableCard);
                   }
@@ -79,6 +82,8 @@ class _PopularWidgetState extends State<PopularWidget> {
                 controller: pageController,
                 itemBuilder: (context, index) {
                   return SizedBox();
+                    
+                  
                 },
               ),
             ),

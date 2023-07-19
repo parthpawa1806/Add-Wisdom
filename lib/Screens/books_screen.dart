@@ -2,6 +2,7 @@ import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mediaplayer/components/pdfreader.dart';
+import '../components/app_drawer.dart';
 import '../controller/tabscontroller.dart';
 
 class BookReadPage extends StatelessWidget {
@@ -23,6 +24,8 @@ class BookReadPage extends StatelessWidget {
       builder: (controller) => DefaultTabController(
         length: _kTabs.length,
         child: Scaffold(
+        drawer: AppDrawer(),
+
         appBar: AppBar(
        leading: IconButton(onPressed: null, icon: Icon(FeatherIcons.menu,color: Colors.white,)),
       backgroundColor: Colors.black,

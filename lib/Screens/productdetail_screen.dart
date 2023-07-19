@@ -7,6 +7,7 @@ import 'package:mediaplayer/components/detailtabscomponent.dart';
 import 'package:mediaplayer/components/imagecard.dart';
 
 import '../components/Buttons.dart';
+import '../components/app_drawer.dart';
 import '../controller/productdetailcontroller.dart';
 
 class ProductDetailPage extends StatelessWidget {
@@ -17,6 +18,8 @@ class ProductDetailPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBarWidget(),
+              drawer: AppDrawer(),
+
       body: Column(
         children: [
           Row(
