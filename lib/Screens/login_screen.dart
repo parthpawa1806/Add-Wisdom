@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:feather_icons/feather_icons.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:mediaplayer/Screens/home_screen.dart';
 import 'package:mediaplayer/Screens/signup_screen.dart';
 
 import '../../components/my_tetxtfield.dart';
@@ -94,12 +95,15 @@ class LoginPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Center(
-                    child: Text(
-                      "Sign In",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
+                    child: InkWell(
+                      onTap:  null,
+                      child: Text(
+                        "Sign In",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ),
