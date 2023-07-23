@@ -3,8 +3,10 @@ import 'package:feather_icons/feather_icons.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:mediaplayer/Screens/home_screen.dart';
+import 'package:mediaplayer/Screens/intro_screen.dart';
 import 'package:mediaplayer/Screens/signup_screen.dart';
-
+import 'package:get/get.dart';
+import 'package:mediaplayer/routes/routes.dart';
 import '../../components/my_tetxtfield.dart';
 
 
@@ -96,7 +98,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   child: const Center(
                     child: InkWell(
-                      onTap:  null,
+                      onTap: null,
                       child: Text(
                         "Sign In",
                         style: TextStyle(
