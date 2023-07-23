@@ -56,13 +56,11 @@ class _PopularWidgetState extends State<PopularWidget> {
                           height: width * .67,
                           width: width * .67,
                           alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            
+                          decoration: BoxDecoration(  
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(20),
                               boxShadow: [
-                                BoxShadow(
-                                  
+                                BoxShadow(                                  
                                     color: Colors.black.withOpacity(.15),
                                     blurRadius: 10)
                               ]),
@@ -82,8 +80,6 @@ class _PopularWidgetState extends State<PopularWidget> {
                 controller: pageController,
                 itemBuilder: (context, index) {
                   return SizedBox();
-                    
-                  
                 },
               ),
             ),

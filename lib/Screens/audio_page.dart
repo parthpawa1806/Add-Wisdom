@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mediaplayer/components/appbar.dart';
 import 'package:mediaplayer/components/audioplayercomponent.dart';
 import 'package:mediaplayer/components/audioplayerdetailcomponent.dart';
-
 import '../components/app_drawer.dart';
 
 class AudioPage extends StatelessWidget {

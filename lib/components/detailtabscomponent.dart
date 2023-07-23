@@ -2,6 +2,8 @@ import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mediaplayer/components/popular.dart';
+import 'package:mediaplayer/components/product_listing_component.dart';
+import 'package:mediaplayer/components/similar_items_component.dart';
 
 import 'package:mediaplayer/controller/detailtabcontroller.dart';
 
@@ -13,9 +15,9 @@ class DetailTabsDetail extends StatelessWidget {
     final _kTabPages = <Widget>[
        Center(child: Scaffold(body: Center(child: Text('hello this is 1st page',style: TextStyle(color: Colors.black),))) ),
        Center(child: Scaffold(body: Center(child: Text('hello this is 2nd page',style: TextStyle(color: Colors.black),))),),
-       Center(child: Scaffold(body: Scaffold(
+       Center(child: Scaffold(
         backgroundColor: Colors.black,
-        body: Center(child: PopularWidget()))),),
+        body: SimilarItemView()),)
 
     ];
     final _kTabs = <Tab>[
